@@ -6,6 +6,7 @@ import './App.css';
 import LoginForm from './components/LoginForm';
 import FriendsList from './components/FriendsList';
 import PrivateRoute from './components/PrivateRoute';
+import AddFriendForm from './components/AddFriendForm';
 
 function App() {
   return (
@@ -17,9 +18,13 @@ function App() {
           <li>
             <Link to="/protected">Protected Page</Link>
           </li>
+          <li>
+            <Link to="/add-friend">Add a Friend</Link>
+          </li>
         </ul>
         <Route path="/login" component={LoginForm} />
         <PrivateRoute exact path="/protected" component={FriendsList} />
+        <PrivateRoute exact path="/add-friend" component={AddFriendForm} />
       </div>
   );
 }
