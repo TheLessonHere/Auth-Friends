@@ -4,7 +4,7 @@ import { Route, Link } from 'react-router-dom';
 import './App.css';
 
 import LoginForm from './components/LoginForm';
-import FriendsList from './components/Friends';
+import FriendsList from './components/FriendsList';
 import PrivateRoute from './components/PrivateRoute';
 
 function App() {
